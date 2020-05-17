@@ -45,4 +45,7 @@ public class GiantCollectionController {
         this.giantModelList.get(index).setNourishment(nourishment);
     }
 
+    public List<GiantModel> getGiantModelList() {
+        return giantModelList;
+    }
 }
