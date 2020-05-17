@@ -8,8 +8,6 @@ class GiantModelTest {
     @Test
     public void testSetHealth(){
         final GiantModel giantModel = new GiantModel(Health.HEALTH, Fatigue.TIRED, Nourishment.HUNGRY);
-        assertEquals(Health.DEAD,giantModel.getHealth());
-
         for (final Health health: Health.values()){
             giantModel.setHealth(health);
             assertEquals(health,giantModel.getHealth());
